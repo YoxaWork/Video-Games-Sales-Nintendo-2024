@@ -29,16 +29,22 @@ Tugas Machine Learning: data splitting, data cleaning, EDA, dan modeling pada da
 
 ## Hasil
 
-Isi dengan hasil dari notebook:
+Evaluasi pada data test (20% data):
 
 | Model | MAE | MSE | R2 |
 |---|---|---|---|
-| Baseline (median) | | | |
-| Lars | | | |
-| Linear Regression | | | |
-| Gradient Boosting Regressor | | | |
+| Baseline (median) | 0.2017 | 0.2017 | -0.1048 |
+| Lars | 0.2337 | 0.1810 | 0.0089 |
+| Linear Regression | 0.2130 | 0.1656 | 0.0932 |
+| Gradient Boosting Regressor | 0.2132 | 0.1642 | 0.1008 |
 
-Model terbaik: (isi dengan nama model)
+**Model terbaik:** Gradient Boosting Regressor, karena memiliki R2 tertinggi (0.1008) dan MSE terendah (0.1642).
+
+**Interpretasi:**
+- Gradient Boosting dan Linear Regression lebih baik dari baseline pada MSE dan R2. Baseline memiliki R2 negatif, artinya prediksinya lebih buruk daripada sekadar menebak rata-rata.
+- Baseline memiliki MAE terkecil karena median memang nilai yang meminimalkan kesalahan absolut. Model lain dilatih meminimalkan kesalahan kuadrat, sehingga lebih baik pada MSE dan R2.
+- Nilai R2 masih rendah (sekitar 0.10), artinya fitur yang tersedia (konsol, genre, publisher, tahun rilis) hanya menjelaskan sebagian kecil variasi penjualan. Penjualan game dipengaruhi hal yang tidak ada di data, seperti marketing dan popularitas franchise.
+- Lars memiliki hasil paling lemah karena dibatasi hanya satu fitur (`n_nonzero_coefs=1`).
 
 ## File
 
