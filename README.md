@@ -4,7 +4,7 @@ Tugas Machine Learning: data splitting, data cleaning, EDA, dan modeling pada da
 
 ## Dataset
 
-- **Nama:** Video Game Sales 2024
+- **Nama:** Video Game Sales Nintendo 2024
 - **Sumber:** Kaggle (asaniczka), data asli dari VGChartz
 - **Link:** https://www.kaggle.com/datasets/asaniczka/video-game-sales-2024
 - **Data yang dipakai:** subset konsol Nintendo, X baris (isi dengan jumlah asli)
